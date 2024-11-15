@@ -1,0 +1,68 @@
+/* General resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Navigation menu styling */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    transition: background-color 0.5s;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar ul li {
+    margin: 0 20px;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+/* Hover effect for menu items */
+#navbar ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Section styling */
+.section {
+    height: 100vh;
+    padding-top: 80px; /* Space for the fixed navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+/* Background color changes for sections */
+#home { background-color: #f1c40f; }
+#about { background-color: #e74c3c; }
+#services { background-color: #3498db; }
+#contact { background-color: #2ecc71; }
+
+/* Style for the navbar after scrolling */
+#navbar .scrolled {
+    background-color: #771010;
+}
